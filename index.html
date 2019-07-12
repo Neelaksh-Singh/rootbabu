@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <meta name="author" content="rootbabu">
+
+      <title>Portfolio Website Template</title>
+
+      <!-- stylesheet -->
+      <link rel="stylesheet" href="style.css">
+
+      <!-- bootstrap cdns -->
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+      <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+		
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+	
+		
+      <!-- google fonts -->
+      <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:100,100i,300,300i,400,400i,500,500i,700,700i" rel="stylesheet">
+
+      <!-- terminal effect -->
+      <script src="t.min.js"></script>
+
+      <!-- for on scroll animations -->
+      <link rel="stylesheet" href="animate.css">
+      <script src="wow.min.js"></script>
+
+</head>
+<body>
+      <div class="wrapper">
+
+            <!--------------- navbar starts here --------------->
+            <nav>
+                  <span id="brand">
+                        <a href="index.html">RO<a href="#"><i class="fa fa-bug" aria-hidden="true" id="icon2"></i></a>TBABU</a>
+                  </span>
+
+                  <ul id="menu">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#work">Work</a></li>
+                        <li><a href="#about">About Me</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="./cv/cv.html">CV</a></li>
+                       
+                  </ul>
+
+                  <div id="toggle">
+                        <div class="span">menu</div>
+                  </div>
+
+            </nav>
+
+            <div id="resize">
+                  <div class="close-btn">close</div>
+
+                  <ul id="menu">
+                        <li><a href="#home">home<span>.</span></a></li>
+                        <li><a href="#work">work<span>.</span></a></li>
+                        <li><a href="#about">about me<span>.</span></a></li>
+                         <li><a href="#contact">contact<span>.</span></a></li>
+                        <li><a href="#projects">Projects<span>.</span></a></li>
+                       
+                  </ul>
+            </div>
+            <!--------------- navbar ends here --------------->
+
+
+
+
+			<!----------------intro section-------------------->
+			
+			<div id="intro" >
+				  <div id="home" class="whitespace"></div>
+
+                  <div class="row">
+                        <div class="col-lg-8  wow fadeInUp">
+							<div><h1>I'M</h1>
+							<h1>Vikas</h1>
+							<h1>Kumawat.</h1>
+							<p>But programmer call me RootBabu:)</p>
+							</div>
+                        </div>
+
+                        <div class="col-lg-4 project project1 wow fadeInUp"></div>
+                  </div>
+
+			</div>
+			<!----------------intro section end-------------------->
+			
+			
+			
+
+
+            <!--------------- projects section starts here --------------->
+            <div class="container-fluid">
+                  <br><br><br>
+
+                  <h6>----</h6>
+
+                  
+       
+                  <div id="work"  class="whitespace"></div>
+
+
+
+
+
+					<script>
+						//smoothness of scrolling
+					let anchorlinks = document.querySelectorAll('a[href^="#"]')
+ 
+						for (let item of anchorlinks) { // relitere 
+							item.addEventListener('click', (e)=> {
+								let hashval = item.getAttribute('href')
+								let target = document.querySelector(hashval)
+								target.scrollIntoView({
+									behavior: 'smooth',
+									block: 'start'
+								})
+								history.pushState(null, null, hashval)
+								e.preventDefault()
+							})
+						}
+					</script>
+					
+					
+					
+					
+					
+                  <div class="row">
+                        <div class="col-lg-6 project project2 wow fadeInUp" ></div>
+
+                        <div  class="col-lg-6">
+                        
+								 <h3 class="wow fadeInUp" data-wow-delay="1s">work.</h3><br>
+                                 <p class="wow fadeInUp" data-wow-delay="1.2s">Right now I'm working on a critical security risks to web applications
+                                 and research different vulnearabilities documentations
+                                  
+                                 and keep learning Computer Networking,Cryptography ,Algorithms , DataStructure etc.
+                                 In  practice , i keep participation in different <a href="https://ctftime.org/event/list/upcoming">CTF</a> compitation and <a href="#">Coding</a> challenges.
+                                 </p>
+                        </div>
+                        
+                  </div>
+
+                  <div id ="about" class="whitespace"></div>
+
+
+
+
+
+
+
+
+
+
+
+
+                  <div  class="row">
+                        <div class="col-lg-8">
+								<h3 class="wow fadeInUp" data-wow-delay="1.2s">About Me.</h3><br>
+
+                              
+                                <p class="wow fadeInUp" data-wow-delay="0.2s">I'm a student programmer and about to finish my 6th semester at Birla institute of technology,jaipur. 
+																			 
+																		Since  I am a fresher, I am still learning and enjoying myself in different <a href="https://github.com/babuhacker">technical</a> and <a href="https://www.instagram.com/root_babu/">non-technical</a> fields.
+																			
+																		Learning for me equates to exploring new ideas and growing as an individual. 
+																		
+								Interested in CyberSecurity field.
+
+                        </div>
+
+                        <div class="col-lg-4 project project3 wow fadeInUp"></div>
+                        
+                   
+                  </div>
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+
+                   <div id="contact" class="whitespace"></div>
+
+       
+
+                
+            <!--------------- projects section ends here --------------->
+
+			
+			
+		
+            <div class="whitespace"  id="projects"></div>
+            
+            
+            <div class="projects">
+				<div class="container">
+					 <br><br>
+
+                        <div class="collab">
+                              <div class="row">
+                                    <div class="col-lg-12">
+                                          <p class="wow fadeInUp">See my Projects</p>
+                                    </div>
+                              </div>
+                        </div>
+                        
+                        
+                 
+
+                        <div class="hr">
+                              <div class="row"></div>
+                        </div>
+
+
+
+						<div class="projects_content">
+							
+							<div class="">
+                                          
+                                 <h5 class="wow fadeInUp" data-wow-delay="0.2s"><a href="#">web-based</a></h5>
+                               
+                                          
+                            </div>
+							<div class="">
+                                          
+                                 <h5 class="wow fadeInUp" data-wow-delay="0.2s"><a href="#">Machine Learning</a></h5>
+                                          
+                            </div>
+							<div class="">
+                                          
+                                 <h5 class="wow fadeInUp" data-wow-delay="0.2s"><a href="#">Deep Learning</a></h5>
+                                          
+                            </div>
+							<div class="">
+                                          
+                                 <h5 class="wow fadeInUp" data-wow-delay="0.2s"><a href="#">Cryptograpghy</a></h5>
+                                          
+                            </div>
+							
+						</div>
+                        
+                    </div>
+               </div> 
+
+            <div class="whitespace"></div>
+            
+            
+            <!--------------- footer starts here --------------->
+            <div class="footer">
+                  <div class="container">
+                        <br><br>
+
+                       
+
+                        <br>
+
+                        <div class="hr">
+                              <div class="row"></div>
+                        </div>
+
+                        <br><br>
+
+                        <div class="info">
+                              <div class="row">
+                                    <div class="col-lg-4" id="personal">
+                                          <p class="wow fadeInUp">Resume</p>
+                                          <h4 class="wow fadeInUp" data-wow-delay="0.2s"><a href="https://www.instagram.com/vikas_ufc/">@vikas_kumawat</a></h4>
+                                          <br><br>
+                                    </div>
+
+                                    <div class="col-lg-4" id="media">
+                                          <p class="wow fadeInUp" data-wow-delay="0s">find me</p>
+
+                                          <ul>
+                                                <li  class="wow fadeInUp" data-wow-delay="0.4s"><a href="https://github.com/babuhacker"><i class="fa fa-github" aria-hidden="true" id="icon1"></i></a></li>
+                                                <li  class="wow fadeInUp" data-wow-delay="0.6s"><a href="https://www.instagram.com/root_babu/"><i class="fa fa-instagram" aria-hidden="true" id="icon1"></i></a></li>
+                                                <li class="wow fadeInUp" data-wow-delay="0.8s"><a href="https://twitter.com/vikas25019"><i class="fa fa-twitter" aria-hidden="true" id="icon1"></i></a></li>
+                                                <li  class="wow fadeInUp" data-wow-delay="1s"><a href="https://medium.com/@vikas25019"><i class="fa fa-medium" aria-hidden="true" id="icon1"></i></a></li>
+                                          </ul>
+
+                                          <br><br>
+                                    </div>
+
+                                    <div class="col-lg-4" id="address">
+                                          <p class="wow fadeInUp" data-wow-delay="0s">say hello</p>
+                                          <h4 class="wow fadeInUp" data-wow-delay="0.2s"><a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJlHFPJzCRbLzfgzrhqWmCHgBNfnhPrWRxtMWDdmnNfWDSBlkmvzpFQtcgJBVPlfZpSpSvB">rootbabu360@gmail.com</a></h4>
+                                          <br><br>
+                                    </div>
+                              </div>
+                        </div>
+                  </div>
+            </div>
+            <!--------------- footer ends here --------------->
+
+            <br><br><br><br>
+
+      </div>
+
+      <!-- greensock cdn -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+
+      <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+      <script type="text/javascript">
+
+      // navigation starts here
+
+      $("#toggle").click(function() {
+            $(this).toggleClass('on');
+            $("#resize").toggleClass("active");
+      });
+
+      $("#resize ul li a").click(function() {
+            $(this).toggleClass('on');
+            $("#resize").toggleClass("active");
+      });
+
+      $(".close-btn").click(function() {
+            $(this).toggleClass('on');
+            $("#resize").toggleClass("active");
+      });
+
+      // navigation ends here
+
+      // nav animation
+
+      TweenMax.from("#brand", 1, {
+            delay: 0.4,
+            y: 10,
+            opacity: 0,
+            ease: Expo.easeInOut
+      })
+
+      TweenMax.staggerFrom("#menu li a", 1, {
+            delay: 0.4,
+            opacity: 0,
+            ease: Expo.easeInOut
+      }, 0.1);
+
+      // nav animation ends
+
+      new WOW().init();
+
+      </script>
+</body>
+</html>
