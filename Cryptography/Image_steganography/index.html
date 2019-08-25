@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>Steganography</title>
+   
+   
+    <script src="files/sjcl.js" type="text/javascript"></script><!--Stanford Javascript Crypto Library (SJCL):     https://crypto.stanford.edu/sjcl/-->
+    <script src="files/main.js" type="text/javascript"></script>
+
+</head>
+
+<style>
+
+	body{
+		padding:0px;
+		margin:0px;
+	}
+	 .container {
+    display: flex;
+  align-items: center;
+  justify-content: center;
+
+  }
+  .center-area{
+	  max-width:50%;
+	  margin-top:200px;
+  }
+  .preview{
+	  
+	  width:50%;
+	  
+  }
+  .output{
+	  width:50%;
+  }
+  
+</style>
+<body>
+   
+	<div class="container">
+		<div class="center-area">
+			<div id="main" class="section dark">
+				<div class="step">Choose an image</div>
+				<img id="preview" class="preview hide">
+				<div class="sectionbody">
+					<input id="file" type="file">
+				</div>
+			</div>
+			<div id="choose" class="section dark hide">
+				
+				<div class="sectionbody">
+					<div class="left">
+						<textarea id="message" class="message" maxlength="1000" placeholder="Type hidden message"></textarea>
+						<input id="password" class="password" placeholder="Password (optional)" type="password">
+						<button id="encode" class="submit">Hide message</button>
+					</div>
+					<div class="right">
+						<input id="password2" class="password" placeholder="Password" type="password">
+						<button id="decode" class="submit">Reveal message</button>
+					</div>
+				</div>
+			</div>
+			<div id="reveal" class="section dark hide">
+				<div class="step">Hidden message</div>
+				<div id="messageDecoded" class="sectionbody"></div>
+			</div>
+			<canvas id="canvas" class="hide" style="width:350px"></canvas>
+			<h4 id="heading" style="display:none">Encypted image</h4>
+			<img id="output" class="output">
+		</div>
+	</div>
+	</body>
+	</html>
