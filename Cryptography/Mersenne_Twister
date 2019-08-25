@@ -1,0 +1,43 @@
+#Mersenne Twister
+
+PBS infinite series: video
+
+The Mersenne Twister is a pseudorandom number generator (PRNG).
+
+
+#pseudorandom number generator
+
+A pseudorandom number generator (PRNG), also known as a deterministic random bit generator (DRBG), is an algorithm for 
+generating a sequence of numbers whose properties approximate the properties of sequences of random numbers. 
+
+The PRNG-generated sequence is not truly random, because it is completely determined by an initial value,
+called the PRNG's seed (which may include truly random values).Although sequences that are closer to truly random 
+can be generated using hardware random number generators. pseudorandom number generators are important in practice for their speed 
+in number generation and their reproducibility.
+
+In computing, a hardware random number generator (HRNG) or true random number generator (TRNG) is a device that generates 
+random numbers from a physical process, rather than by means of an algorithm. Such devices are often based on microscopic 
+phenomena that generate low-level, statistically random "noise" signals, such as thermal noise, the photoelectric effect, 
+involving a beam splitter, and other quantum phenomena. These stochastic processes are, in theory, completely unpredictable,
+and the theory's assertions of unpredictability are subject to experimental test. This is in contrast to the paradigm of 
+pseudo-random number generation commonly implemented in computer programs. 
+
+PRNGs are central in applications such as simulations (e.g. for the Monte Carlo method), electronic games
+(e.g. for procedural generation), and cryptography. Cryptographic applications require the output not to be predictable from 
+earlier outputs, and more elaborate algorithms, which do not inherit the linearity of simpler PRNGs, are needed. 
+
+
+
+The most commonly used version of the Mersenne Twister algorithm is based on the Mersenne prime 219937−1.
+
+The standard implementation of that, MT19937, uses a 32-bit word length. There is another implementation
+that uses a 64-bit word length, MT19937-64; it generates a different sequence. 
+
+
+
+
+Linear_Congruential_engine---------------->Implements linear congruential
+Mersenne_twister_engine------------------->implements Mersenne Twister algorithm
+subtract_with_carry_engine---------------->implements subtract with a carry algorithm
+
+
